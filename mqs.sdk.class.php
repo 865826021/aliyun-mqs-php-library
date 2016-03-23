@@ -59,8 +59,7 @@ Class mqs{
     }
 
     private static function _getGMTDate(){
-        date_default_timezone_set("UTC");
-        return date('D, d M Y H:i:s', time()) . ' GMT';
+        return gmdate('D, d M Y H:i:s', time()) . ' GMT';
     }
 
     private static function _getContentType(){
